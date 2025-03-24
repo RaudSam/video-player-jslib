@@ -23,16 +23,20 @@
     .controls-wrapper {
       background-color: black;
       flex-shrink: 0;
-      
+      display: flex;
     }
 
     .control-button {
       border: none;
       cursor: pointer;
       background-color: transparent;
-      width: 30px;
-      height: 30px;
-      margin: 2px;
+      width: 25px;
+      height: 25px;
+      margin: 1px;
+    }
+
+    .spacer {
+      flex-grow: 1;
     }
 
     .icon-white {
@@ -63,6 +67,12 @@
 
       <button class="js-volume-button control-button">
         <i class="fa fa-volume-off icon-white" aria-hidden="true"></i>
+      </button>
+
+      <div class="spacer"></div>
+      
+      <button class="js-fullscreen-button control-button">
+        <i class="fa fa-expand icon-white" aria-hidden="true"></i>
       </button>
 
     </div>
