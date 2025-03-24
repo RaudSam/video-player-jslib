@@ -15,12 +15,12 @@
     }
 
     .video-container {
-      flex-grow: 1; /* Занимает всё свободное пространство */
+      flex-grow: 1;
     }
 
     .controls-wrapper {
       background-color: black;
-      flex-shrink: 0; /* Не сжимается */
+      flex-shrink: 0;
     }
 
     .control-button {
@@ -34,6 +34,7 @@
 
     .icon-white {
       color: white;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -41,12 +42,23 @@
   <div id="player" class="player-container">
     <div class="js-video-container video-container"></div>
     <div class="controls-wrapper">
+
       <button class="js-play-button control-button">
         <i class="fa fa-play icon-white" aria-hidden="true"></i>
       </button>
+
       <button class="js-pause-button control-button pause-button">
         <i class="fa fa-pause icon-white" aria-hidden="true"></i>
       </button>
+
+      <button class="js-mute-button control-button">
+        <i class="fa fa-volume-up icon-white" aria-hidden="true"></i>
+      </button>
+
+      <button class="js-volume-button control-button">
+        <i class="fa fa-volume-off icon-white" aria-hidden="true"></i>
+      </button>
+
     </div>
   </div>
   
