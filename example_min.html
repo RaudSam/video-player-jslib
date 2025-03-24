@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <link rel="stylesheet" href="./font-awesome.min.css">
   <title>Пример подключения плеера</title>
   <meta charset="utf-8">
+
   <style>
     .player-container {
       width: 800px;
@@ -21,24 +23,28 @@
     .controls-wrapper {
       background-color: black;
       flex-shrink: 0;
+      
     }
 
     .control-button {
       border: none;
       cursor: pointer;
       background-color: transparent;
-      width: 25px;
-      height: 25px;
-      margin: 0.5px auto;
+      width: 30px;
+      height: 30px;
+      margin: 2px;
     }
 
     .icon-white {
       color: white;
-      font-size: 25px;
+      font-size: 15px;
     }
   </style>
+
 </head>
+
 <body>
+
   <div id="player" class="player-container">
     <div class="js-video-container video-container"></div>
     <div class="controls-wrapper">
@@ -69,5 +75,6 @@
   <script type="text/javascript">
     createPlayer({elementId: 'player'});
   </script>
+
 </body>
 </html>
