@@ -11,10 +11,8 @@
 
 ## Примеры
 
-Два рабочих примера:
+Пример сайта на основе кода — [тут](https://raudsam.github.io/video-player-jslib/)
 
-- Страница с минимальными настройками — [example_min.html](./example_min.html)
-- Страница с максимальными настройками — [example_max.html](./example_max.html)
 
 ## Как подключить
 
