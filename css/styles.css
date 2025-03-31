@@ -18,6 +18,8 @@
 }
 
 .control-button {
+  color: white;
+  font-size: 15px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -28,9 +30,4 @@
 
 .spacer {
   flex-grow: 1;
-}
-
-.icon-white {
-  color: white;
-  font-size: 15px;
 }
