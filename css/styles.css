@@ -19,12 +19,12 @@
 
 .control-button {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   border: none;
   cursor: pointer;
   background-color: transparent;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 45px;
   margin: 1px;
 }
 
