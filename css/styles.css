@@ -31,3 +31,12 @@
 .spacer {
   flex-grow: 1;
 }
+
+.player-time {
+  color: white; /* Белый цвет текста */
+  font-family: "Roboto", sans-serif; /* Как в макете */
+  font-size: 16px; /* Размер из дизайна */
+  margin-left: 2px; /* Отступ от соседних кнопок */
+  display: flex; /* Для выравнивания элементов в линию */
+  align-items: center; /* Вертикальное центрирование */
+}
