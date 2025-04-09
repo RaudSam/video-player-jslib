@@ -33,10 +33,62 @@
 }
 
 .player-time {
-  color: white; /* Белый цвет текста */
-  font-family: "Roboto", sans-serif; /* Как в макете */
-  font-size: 16px; /* Размер из дизайна */
-  margin-left: 2px; /* Отступ от соседних кнопок */
-  display: flex; /* Для выравнивания элементов в линию */
-  align-items: center; /* Вертикальное центрирование */
+  color: white; 
+  font-family: "Roboto", sans-serif; 
+  font-size: 16px; 
+  margin-left: 2px; 
+  display: flex; 
+  align-items: center;
+}
+
+.progress-container {
+  flex-grow: 1;
+  margin: 15px 15px 15px 10px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.js-progress {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: gray;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: height 0.2s;
+}
+
+.js-progress-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  background-color: red;
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+.js-progress-slider::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  background: red;
+  border: 4px solid white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Ховер-эффекты */
+.js-progress:hover {
+  height: 6px;
+}
+
+.js-progress:hover .js-progress-slider::after {
+  transform: translateY(-50%) scale(1.2);
 }
